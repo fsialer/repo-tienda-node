@@ -19,11 +19,11 @@ jobs:
       run: npm install
 
     - name: login to azure
-      uses: azure/login@v1
+      uses: azure/login@v2
       with:
         creds: ${{secrets.AZURE_CREDENTIALS}}
     - name: Deploy to azure web app
-      uses: azure/webapp-deploy@v2
+      uses: azure/webapps-deploy@v2
       with:
         app-name: ${{vars.APP_NAME}}
         publish-profile: ${{secrets.PUBLISH_PROFILE}}

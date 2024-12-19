@@ -26,7 +26,7 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{vars.APP_NAME}}
-        publish-profile: ${{secrets.PUBLISH_PROFILE}}
+        publish-profile: ${{secrets.PUBLISH_PROFILE}} #Esto si obtienes de download publis profile  y lo guardas en un secret
         package: .
 
           

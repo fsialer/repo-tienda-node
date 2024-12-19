@@ -1,7 +1,7 @@
 name: Create Azure Resources
 
 on:
-  worflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   create:
